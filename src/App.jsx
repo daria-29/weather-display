@@ -49,16 +49,17 @@ function App() {
       </div>
 
       <div className="temperature-display">
-        <WeatherIcon />
+        <WeatherIcon image ={`${data.WeatherIcon}`}/>
       </div>
       <div className="main-data">
-        <MainData />
+        <MainData temp={`${data.temperature}`} tempa={`${data.apparentTemperature}`} />
       </div>
       <div className="time-data">
-        <TimeData />
+        <TimeData data= {`${data.time.day} - ${data.time.month} - ${data.time.year}`}
+                  time= {`${data.time.hour}.${data.time.minute}.${data.time.second}`}/>
       </div>
       <div className="forecast">
-        <Forecast />
+        <Forecast temperature={`${data.temperature}`}/>
       </div>
     </div>
   );
