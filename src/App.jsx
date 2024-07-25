@@ -45,7 +45,7 @@ function App() {
   return (
     <div className="app">
       <div className="featured-data">
-        <FeaturedData />
+        <FeaturedData city="Sinaia"/>
       </div>
 
       <div className="temperature-display">
